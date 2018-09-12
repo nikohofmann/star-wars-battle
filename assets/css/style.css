@@ -1,0 +1,73 @@
+/* 
+  Custom Styles
+*/
+
+@font-face {
+  font-family: "Star Jedi";
+  src: url("../fonts/starjedi/Starjedi.ttf");
+}
+
+html {
+  background: #000 url("../images/background.jpg") no-repeat fixed left top;
+  background-size: cover;
+  font-family: "Star Jedi";
+}
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  color: #ffe521;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+.characterContainer {
+  color: #fff;
+  margin: 20px;
+  padding: 20px;
+}
+
+.characterContainer:hover {
+  cursor: pointer;
+}
+
+.characterName,
+.characterHealth {
+  text-align: center;
+}
+
+.characterName {
+  padding-bottom: 20px;
+}
+
+.characterImage {
+  width: 150px;
+}
+
+#yourCharacter,
+#enemies {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#yourCharacter .characterContainer {
+  background-color: #333;
+}
+
+#yourCharacter .characterContainer:hover {
+  background-color: #444;
+}
+
+#enemies .characterContainer {
+  background-color: #9e1019;
+}
+
+#enemies .characterContainer:hover {
+  background-color: #bd131e;
+}
+
+.d-none {
+  display: none !important;
+}
