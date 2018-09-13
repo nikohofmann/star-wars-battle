@@ -56,7 +56,7 @@ $(document).ready(function() {
     {
       name: "obi-wan kenobi",
       healthPoints: 130,
-      attackPower: 8,
+      attackPower: 9,
       counterAttackPower: 12,
       picture: "assets/images/obiwan.png",
     },
