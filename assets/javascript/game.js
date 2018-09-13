@@ -55,30 +55,30 @@ $(document).ready(function() {
     remainingCharacters = [
     {
       name: "obi-wan kenobi",
-      healthPoints: 130,
-      attackPower: 9,
+      healthPoints: 135,
+      attackPower: 10,
       counterAttackPower: 12,
       picture: "assets/images/obiwan.png",
     },
     {
       name: "luke skywalker",
-      healthPoints: 120,
-      attackPower: 10,
-      counterAttackPower: 10,
+      healthPoints: 125,
+      attackPower: 12,
+      counterAttackPower: 11,
       picture: "assets/images/skywalker.png",
     },
     {
       name: "darth sidious",
       healthPoints: 140,
-      attackPower: 14,
-      counterAttackPower: 15,
+      attackPower: 8,
+      counterAttackPower: 14,
       picture: "assets/images/darthsidious.png",
     },
     {
       name: "darth maul",
-      healthPoints: 150,
-      attackPower: 12,
-      counterAttackPower: 20,
+      healthPoints: 130,
+      attackPower: 9,
+      counterAttackPower: 16,
       picture: "assets/images/darthmaul.png",
     }];
 
