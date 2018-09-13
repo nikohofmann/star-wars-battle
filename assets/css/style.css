@@ -23,13 +23,37 @@ h1 {
   font-size: 34px;
 }
 
+.w-100 {
+  width: 100% !important;
+}
+
+.battleContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+#yourCharacterContainer,
+#defenderContainer {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#fightSectionContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  width: 330px;
+}
+
 .characterContainer {
+  border-radius: 10px;
   color: #fff;
   margin: 20px;
   padding: 20px;
 }
 
-.characterContainer:hover {
+.clickableCharacter:hover {
   cursor: pointer;
 }
 
@@ -47,7 +71,8 @@ h1 {
 }
 
 #yourCharacter,
-#enemies {
+#enemies,
+#defender {
   display: flex;
   flex-flow: row nowrap;
 }
@@ -56,18 +81,70 @@ h1 {
   background-color: #333;
 }
 
-#yourCharacter .characterContainer:hover {
+#yourCharacter .clickableCharacter:hover {
   background-color: #444;
 }
 
-#enemies .characterContainer {
+#yourCharacter .characterContainer,
+#defender .characterContainer {
+  margin: 20px auto;
+}
+
+#enemies .characterContainer,
+#defender .characterContainer {
   background-color: #9e1019;
 }
 
-#enemies .characterContainer:hover {
+#enemies .clickableCharacter:hover,
+#defender .clickableCharacter:hover {
   background-color: #bd131e;
 }
 
 .d-none {
   display: none !important;
+}
+
+#messages {
+  height: 100px;
+  background: #eee;
+  border-radius: 5px;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+}
+
+#attackButton {
+  display: inline-block;
+  font-family: "Star Jedi";
+  font-size: 30px !important;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  cursor: pointer;
+}
+
+#attackButton:hover {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+#attackButton:focus {
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+#fightHeader {
+  text-align: center;
 }
